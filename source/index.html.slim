@@ -1,0 +1,21 @@
+h1 = podcast_name
+h2 = podcast_description
+- data.books.each do |book_name, book|
+  .book
+    h3 = book.title
+    h4 = book.subtitle
+    p
+      | by&nbsp;
+      = partial 'person', locals: { person: data.people[book.author] }
+    ul.links
+      - book.links.each do |name, url|
+        li = link_to name, url
+    ul.buy-links
+      - book.buy_links.each do |name, url|
+        li = link_to name, url
+    ul.readers
+      - book.readers.each do |reader|
+        li = partial 'person', locals: { person: data.people[reader] }
+    ul.episodes
+      - book.episodes.each do |episode|
+        li = partial 'episode', locals: { episode: episode }

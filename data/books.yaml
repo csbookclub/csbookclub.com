@@ -1,0 +1,27 @@
+---
+understanding-computation:
+  title: Understanding Computation
+  subtitle: From Simple Machines to Impossible Programs
+  author: tomstuart
+  links:
+    "Homepage": http://computationbook.com
+    "Sample": http://computationbook.com/sample
+    "Source Code": https://github.com/tomstuart/computationbook
+  buy_links:
+    "Amazon (US)": http://www.amazon.com/dp/1449329276
+    "Amazon (UK)": http://www.amazon.co.uk/dp/1449329276
+    "Kindle": http://www.amazon.com/Understanding-Computation-Machines-Impossible-Programs-ebook/dp/B00CT3C4IM/ref=tmm_kin_title_0?_encoding=UTF8&sr=&qid=
+    "O'Reilly": http://shop.oreilly.com/product/0636920025481.do
+  readers:
+    - justincampbell
+    - ashtonharris
+    - briancobb
+  start_date: 2015-01-15
+  episodes:
+    - name: "Preface, Just Enough Ruby"
+      date: 2015-01-15
+      mp3: understanding-computation-1.mp3
+      bytes: 12345678
+      seconds: 1234
+    - name: "Operational Semantics"
+      date: 2015-01-29

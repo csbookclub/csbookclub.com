@@ -1,0 +1,9 @@
+- if person.url
+  = link_to person.name, person.url
+- else
+  = person.name
+- links = []
+- links << link_to("GitHub", "https://github.com/#{person.github}") if person.github
+- links << link_to("Twitter", "https://twitter.com/#{person.twitter}") if person.twitter
+- if links.any?
+  | &nbsp;(#{links.join(', ')})
