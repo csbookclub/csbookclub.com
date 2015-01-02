@@ -30,27 +30,28 @@ xml.rss(
 
     xml.itunes :category, text: "Technology" do
       xml.itunes :category, text: "Software How-To"
-      xml.itunes :category, text: "Tech News"
     end
 
     xml.itunes :keywords, keywords.join(',')
 
-    podcast_episodes.each do |episode|
+    discussions.each do |discussion|
       xml.item do
-        xml.title episode.name
-        # xml.link url(episode.url)
-        xml.description episode.name
-        # xml.content :encoded, episode.body + partial(:shownotes_footer, locals: { episode: episode })
-        xml.pubDate (episode.date.to_time + (15 * 60 * 60)).strftime("%a, %d %b %Y %H:%M:%S %z")
-        # xml.guid url(episode.url), isPermaLink: "true"
-        xml.media :content, url: episode.mp3, type: "audio/mpeg", fileSize: episode.bytes
-        xml.enclosure url: episode.mp3, type: "audio/mpeg", length: episode.bytes
+        book = data.books[discussion.book]
+        title = "#{book.title}: #{discussion.name}"
+        xml.title title
+        # xml.link url(discussion.url)
+        xml.description title
+        # xml.content :encoded, discussion.body + partial(:shownotes_footer, locals: { discussion: discussion })
+        xml.pubDate (discussion.date.to_time + (15 * 60 * 60)).strftime("%a, %d %b %Y %H:%M:%S %z")
+        # xml.guid url(discussion.url), isPermaLink: "true"
+        xml.media :content, url: discussion.mp3, type: "audio/mpeg", fileSize: discussion.bytes
+        xml.enclosure url: discussion.mp3, type: "audio/mpeg", length: discussion.bytes
 
-        xml.itunes :subtitle, episode.name
-        xml.itunes :summary, episode.name
+        xml.itunes :subtitle, discussion.name
+        xml.itunes :summary, discussion.name
         xml.itunes :author, podcast_name
         xml.itunes :explicit, "no"
-        xml.itunes :duration, episode.seconds
+        xml.itunes :duration, discussion.seconds
         xml.itunes :keywords, keywords.join(',')
         xml.itunes :image, href: cover_art_url(:large)
       end

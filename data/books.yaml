@@ -17,7 +17,7 @@ understanding-computation:
     - ashtonharris
     - briancobb
   start_date: 2015-01-15
-  episodes:
+  discussions:
     - name: "Preface, Just Enough Ruby"
       date: 2015-01-15
       mp3: understanding-computation-1.mp3

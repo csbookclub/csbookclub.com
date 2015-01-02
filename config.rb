@@ -19,8 +19,13 @@ helpers do
     url(cover_art_path(*args))
   end
 
-  def podcast_episodes
-    data.books.values.collect(&:episodes).flatten.select(&:mp3)
+  def discussions
+    data.books.each_with_object([]) { |(book_key, book), results|
+      book.discussions.each do |discussion|
+        discussion[:book] = book_key
+      end
+      results << book.discussions.select(&:mp3)
+    }.flatten
   end
 
   def podcast_name
