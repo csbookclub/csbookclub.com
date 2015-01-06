@@ -4,6 +4,7 @@ set :images_dir, 'images'
 page '/podcast.xml', layout: false
 
 configure :build do
+  activate :relative_assets unless ENV['CI']
 end
 
 helpers do
