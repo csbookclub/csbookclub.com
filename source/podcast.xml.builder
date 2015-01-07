@@ -39,11 +39,11 @@ xml.rss(
         book = data.books[discussion.book]
         title = "#{book.title}: #{discussion.name}"
         xml.title title
-        # xml.link url(discussion.url)
+        xml.link url(discussion.book)
         xml.description title
         # xml.content :encoded, discussion.body + partial(:shownotes_footer, locals: { discussion: discussion })
         xml.pubDate (discussion.date.to_time + (15 * 60 * 60)).strftime("%a, %d %b %Y %H:%M:%S %z")
-        # xml.guid url(discussion.url), isPermaLink: "true"
+        xml.guid url(discussion.book, anchor: discussion.name), isPermaLink: "true"
         xml.media :content, url: discussion.mp3, type: "audio/mpeg", fileSize: discussion.bytes
         xml.enclosure url: discussion.mp3, type: "audio/mpeg", length: discussion.bytes
 

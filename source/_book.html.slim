@@ -1,0 +1,21 @@
+.book
+  h3
+    .title = book.title
+    small.subtitle = book.subtitle
+  p
+    | by&nbsp;
+    = partial 'person', locals: { person: data.people[book.author] }
+  ul.links.urls
+    - book.links.each do |name, url|
+      li = link_to name, url
+  ul.links.buy
+    - book.buy_links.each do |name, url|
+      li = link_to name, url
+  h4 Readers
+  ul.readers
+    - book.readers.each do |reader|
+      li = partial 'person', locals: { person: data.people[reader] }
+  h4 Discussions
+  ul.discussions
+    - book.discussions.each do |discussion|
+      li = partial 'discussion', locals: { discussion: discussion }

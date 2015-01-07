@@ -7,6 +7,15 @@ configure :build do
   activate :relative_assets unless ENV['CI']
 end
 
+activate :directory_indexes
+
+data.books.each do |book_id, book|
+  proxy "/#{book_id}/index.html",
+    'book.html',
+    locals: { book_id: book_id,  book: book },
+    ignore: true
+end
+
 helpers do
   def cover_art_path(size = :medium)
     {
@@ -21,9 +30,9 @@ helpers do
   end
 
   def discussions
-    data.books.each_with_object([]) { |(book_key, book), results|
+    data.books.each_with_object([]) { |(book_id, book), results|
       book.discussions.each do |discussion|
-        discussion[:book] = book_key
+        discussion[:book] = book_id
       end
       results << book.discussions.select(&:mp3)
     }.flatten
@@ -60,6 +69,10 @@ helpers do
     ]
   end
 
+  def slug(string)
+    string.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
+  end
+
   def title
     [
       podcast_name,
@@ -71,9 +84,11 @@ helpers do
     "https://twitter.com/cs_bookclub"
   end
 
-  def url(path = "")
+  def url(path = "", anchor: nil)
     path = path.gsub(/^\//, '')
 
-    "http://www.csbookclub.com/#{path}"
+    result = "http://www.csbookclub.com/#{path}"
+    result << "##{slug(anchor)}" if anchor
+    result
   end
 end
