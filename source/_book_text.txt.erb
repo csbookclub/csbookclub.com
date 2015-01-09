@@ -1,0 +1,20 @@
+<%= book.title %>
+<%= book.subtitle %>
+by <%= data.people[book.author].name %>
+
+<% book.links.each do |name, url| %>
+  <%= name %>: <%= url %>
+<% end %>
+<% book.buy_links.each do |name, url| %>
+  <%= name %>: <%= url %>
+<% end %>
+
+Readers:
+<% book.readers.each do |reader| %>
+  <%= data.people[reader].name %>
+<% end %>
+
+Discussions:
+<% book.discussions.each do |discussion| %>
+  <%= discussion.name %>
+<% end %>
