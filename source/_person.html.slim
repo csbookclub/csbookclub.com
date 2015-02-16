@@ -1,8 +1,6 @@
-- if person.url
-  = link_to person.name, person.url
-- else
-  = person.name
+= person.name
 - links = []
+- links << link_to("Homepage", "#{person.url}") if person.url
 - links << link_to("GitHub", "https://github.com/#{person.github}") if person.github
 - links << link_to("Twitter", "https://twitter.com/#{person.twitter}") if person.twitter
 - if links.any?
