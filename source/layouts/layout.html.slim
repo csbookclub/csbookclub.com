@@ -10,7 +10,7 @@ html
     h2 = podcast_description
     nav
       ul.links
-        li = link_to "iTunes", "TODO"
-        li = link_to "XML", "TODO"
-        li = link_to "GitHub", "TODO"
+        li = link_to "iTunes", itunes_url
+        li = link_to "XML", podcast_url
+        li = link_to "GitHub", github_url
     = yield
