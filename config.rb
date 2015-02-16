@@ -38,6 +38,12 @@ helpers do
     }.flatten
   end
 
+  def format_time(seconds)
+    m = (seconds / 60).to_s
+    s = (seconds % 60).to_s.gsub(/^(\d)$/, '0\1')
+    "#{m}:#{s}"
+  end
+
   def podcast_name
     "CS Book Club"
   end

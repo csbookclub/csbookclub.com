@@ -2,6 +2,6 @@
 small
   | &nbsp;
   - if discussion.mp3
-    = discussion.seconds
+    = format_time(discussion.seconds)
   - else
     | (Expected #{discussion.date})
