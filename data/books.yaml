@@ -21,8 +21,11 @@ understanding-computation:
   discussions:
     - name: "Preface, Just Enough Ruby"
       date: 2015-01-15
-      mp3: understanding-computation-1.mp3
-      bytes: 12345678
-      seconds: 1234
-    - name: "Operational Semantics"
+      mp3: http://episodes.csbookclub.com/understanding-computation-1.mp3
+      seconds: 2103
+      bytes: 33649695
+    - name: "Chapter 2: The Meaning of Programs, Operational Semantics"
       date: 2015-01-29
+      mp3: http://episodes.csbookclub.com/understanding-computation-1.mp3
+      seconds: 2107
+      bytes: 23078274
