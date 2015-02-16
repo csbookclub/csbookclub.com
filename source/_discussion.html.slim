@@ -2,6 +2,8 @@
 small
   | &nbsp;
   - if discussion.mp3
+    = link_to "mp3", discussion.mp3
+    | &nbsp;
     = format_time(discussion.seconds)
   - else
     | (Expected #{discussion.date})
