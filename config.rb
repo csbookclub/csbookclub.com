@@ -79,6 +79,10 @@ helpers do
     string.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
   end
 
+  def suggestion_url
+    "https://justincampbell.typeform.com/to/rYUFg4"
+  end
+
   def title
     [
       podcast_name,
