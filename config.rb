@@ -19,9 +19,9 @@ end
 helpers do
   def cover_art_path(size = :medium)
     {
-      small: "/cover-art-128.png",
-      medium: "/cover-art-512.png",
-      large: "/cover-art-1400.png"
+      small: "/images/cover-art-128.png",
+      medium: "/images/cover-art-512.png",
+      large: "/images/cover-art-1400.png"
     }[size]
   end
 
