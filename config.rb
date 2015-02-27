@@ -52,8 +52,12 @@ helpers do
     "Computer Science for Everyone"
   end
 
+  def podcast_path
+    "/podcast.xml"
+  end
+
   def podcast_url
-    url("podcast.xml")
+    url(podcast_path)
   end
 
   def github_url
