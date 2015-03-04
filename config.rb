@@ -65,7 +65,7 @@ helpers do
   end
 
   def itunes_url
-    "https://itunes.apple.com/us/podcast/TODO/TODO"
+    "https://itunes.apple.com/us/podcast/cs-book-club/id972444981"
   end
 
   def keywords
