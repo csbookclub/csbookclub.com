@@ -1,30 +1,64 @@
 @import normalize
 
-$background: white
-$buy: yellow
-$link: #06c
-$url: lightblue
-$text: #333
+$dark-blue: rgb(9, 112, 221)
+$dark-gray: #333
+$light-blue: rgb(225, 238, 250)
+$orange: rgb(240, 175, 101)
+$pink: rgb(253, 138, 169)
+$yellow: yellow
+
+$background: $light-blue
+$buy: $yellow
+$link: $dark-blue
+$url: $dark-blue
+$text: $dark-gray
 
 body
   background-color: $background
   color: $text
-  padding: 1em
+  font-family: Futura
+  padding: 0
 
-h1, h2
-  text-align: center
-
-h3, h4
+h1, h2, h3, h4
+  font-weight: normal
   margin: 0
 
-nav
+h1
+  img
+    width: 100%
+
+h2
+  font-size: 1.25em
   text-align: center
 
+nav
+  margin: 1em 0
+  text-align: center
+
+footer
+  text-align: center
+
+  ul
+    margin: 1em
+
 .book
+  background: white
   padding: 1em
 
-  .title
-    text-transform: uppercase
+  h3
+    color: white
+    font-size: 1.5em
+    line-height: 1.25
+
+    .title
+      background-color: $pink
+      box-shadow: 0.25em 0 0 $pink, -0.25em 0 0 $pink
+      text-transform: uppercase
+
+    .subtitle
+      background-color: $orange
+      box-shadow: 0.25em 0 0 $orange, -0.25em 0 0 $orange
+
 
 a
   color: $link
@@ -47,8 +81,10 @@ ul
       padding: 0.25em
       margin: 0.25em
 
-.urls a
-  background: $url
+.urls
+  a
+    color: white !important
+    background: $url
 
 .buy a
   background: $buy

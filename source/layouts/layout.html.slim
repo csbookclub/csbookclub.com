@@ -13,7 +13,9 @@ html
     title = title
     = stylesheet_link_tag "normalize", "all"
   body
-    h1 = podcast_name
+    h1
+      = link_to "/" do
+        img src=cover_art_path alt=podcast_name
     h2 = podcast_description
     nav
       ul.links

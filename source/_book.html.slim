@@ -1,7 +1,8 @@
 .book
   h3
-    .title = book.title
-    small.subtitle = book.subtitle
+    span.title = book.title
+    .clearfix
+    span.subtitle = book.subtitle
   p
     | by&nbsp;
     = partial 'person', locals: { person: data.people[book.author] }
