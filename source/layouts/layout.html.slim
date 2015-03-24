@@ -13,17 +13,18 @@ html
     title = title
     = stylesheet_link_tag "normalize", "all"
   body
-    h1
-      = link_to "/" do
-        img src=cover_art_path alt=podcast_name
-    h2 = podcast_description
-    nav
-      ul.links
-        li = link_to "iTunes", itunes_url
-        li = link_to "XML", podcast_path
-        li = link_to "GitHub", github_url
-        li = link_to "Twitter", twitter_url
-    = yield
-    footer
-      ul.links
-        li = link_to "Suggest a book", suggestion_url
+    .wrapper
+      h1
+        = link_to "/" do
+          img src=cover_art_path alt=podcast_name
+      h2 = podcast_description
+      nav
+        ul.links
+          li = link_to "iTunes", itunes_url
+          li = link_to "XML", podcast_path
+          li = link_to "GitHub", github_url
+          li = link_to "Twitter", twitter_url
+      = yield
+      footer
+        ul.links
+          li = link_to "Suggest a book", suggestion_url

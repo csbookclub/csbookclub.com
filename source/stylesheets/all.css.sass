@@ -24,8 +24,11 @@ h1, h2, h3, h4
   margin: 0
 
 h1
+  margin-top: 1em
+  text-align: center
+
   img
-    width: 100%
+    max-width: 240px
 
 h2
   font-size: 1.25em
@@ -39,7 +42,7 @@ footer
   text-align: center
 
   ul
-    margin: 1em
+    margin: 3em
 
 .book
   background: white
@@ -88,3 +91,12 @@ ol, ul
 
 .buy a
   background: $buy
+
+@media all and (min-width: 641px)
+  .wrapper
+    margin: 0 auto
+    width: 640px
+
+  .book
+    box-shadow: 5px 5px 0px 0px $dark-gray
+    border: 1px solid $dark-blue
