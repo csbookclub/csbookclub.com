@@ -17,6 +17,6 @@
     - book.readers.each do |reader|
       li = partial 'person', locals: { person: data.people[reader] }
   h4 Discussions
-  ul.discussions
+  ol.discussions
     - book.discussions.each do |discussion|
       li = partial 'discussion', locals: { discussion: discussion }
