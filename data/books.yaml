@@ -34,3 +34,8 @@ understanding-computation:
       mp3: http://episodes.csbookclub.com/understanding-computation-3.mp3
       seconds: 1272
       bytes: 20344960
+    - name: "Chapter 3: The Simplest Computers"
+      date: 2015-03-27
+      mp3: http://episodes.csbookclub.com/understanding-computation-4.mp3
+      seconds: 1177
+      bytes: 18834304
