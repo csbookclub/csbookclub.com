@@ -41,3 +41,8 @@ understanding-computation:
       bytes: 18834304
     - name: "Chapter 4: Just Add Power"
       date: 2015-04-10
+      mp3: http://episodes.csbookclub.com/understanding-computation-5.mp3
+      seconds: 1362
+      bytes: 21788850
+    - name: "Chapter 5: The Ultimate Machine"
+      date: 2015-04-24
