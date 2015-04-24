@@ -9,6 +9,10 @@ end
 
 activate :directory_indexes
 
+activate :google_analytics do |ga|
+  ga.tracking_id = 'UA-62242525-1'
+end
+
 data.books.each do |book_id, book|
   proxy "/#{book_id}/index.html",
     'book.html',
