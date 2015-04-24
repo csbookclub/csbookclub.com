@@ -46,3 +46,8 @@ understanding-computation:
       bytes: 21788850
     - name: "Chapter 5: The Ultimate Machine"
       date: 2015-04-24
+      mp3: http://episodes.csbookclub.com/understanding-computation-6.mp3
+      seconds: 1235
+      bytes: 19759664
+    - name: "Chapter 6: Programming with Nothing"
+      date: 2015-05-08
