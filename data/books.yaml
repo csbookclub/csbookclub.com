@@ -50,4 +50,9 @@ understanding-computation:
       seconds: 1235
       bytes: 19759664
     - name: "Chapter 6: Programming with Nothing"
-      date: 2015-05-08
+      date: 2015-06-12
+      mp3: http://episodes.csbookclub.com/understanding-computation-7.mp3
+      seconds: 2288
+      bytes: 36613036
+    - name: "Chapter 7: Universality is Everywhere"
+      date: 2015-06-26
