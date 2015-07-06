@@ -43,7 +43,7 @@ xml.rss(
         xml.title title
         xml.link url(discussion.book)
         xml.description partial(:book_text, locals: { book: book }) + partial(:shownotes_footer)
-        xml.content :encoded, partial(:book, locals: { book: book }) + partial(:shownotes_footer)
+        xml.content :encoded, partial(:book, locals: { book_id: discussion.book, book: book }) + partial(:shownotes_footer)
 
         xml.pubDate (discussion.date.to_time + (15 * 60 * 60)).strftime("%a, %d %b %Y %H:%M:%S %z")
         xml.guid url(discussion.book, anchor: discussion.name), isPermaLink: "true"

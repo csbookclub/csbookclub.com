@@ -1,6 +1,7 @@
 .book
   h3
-    span.title = book.title
+    = link_to url(book_id) do
+      span.title = book.title
     .clearfix
     span.subtitle = book.subtitle
   p
