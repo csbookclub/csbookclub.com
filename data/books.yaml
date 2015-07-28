@@ -55,4 +55,9 @@ understanding-computation:
       seconds: 2288
       bytes: 36613036
     - name: "Chapter 7: Universality is Everywhere"
-      date: 2015-06-26
+      date: 2015-07-28
+      mp3: http://episodes.csbookclub.com/understanding-computation-8.mp3
+      seconds: 1223
+      bytes: 19564484
+    - name: "Chapter 8: Impossible Programs"
+      date: 2015-08-07
