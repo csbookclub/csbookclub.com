@@ -60,4 +60,9 @@ understanding-computation:
       seconds: 1223
       bytes: 19564484
     - name: "Chapter 8: Impossible Programs"
-      date: 2015-08-07
+      date: 2015-07-31
+      mp3: http://episodes.csbookclub.com/understanding-computation-9.mp3
+      seconds: 1380
+      bytes: 22086443
+    - name: "Chapter 9: Programming in Toyland"
+      date: 2015-08-14
