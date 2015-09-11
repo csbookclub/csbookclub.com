@@ -6,4 +6,7 @@ small
     | &nbsp;
     = format_time(discussion.seconds)
   - else
-    | (Expected #{discussion.date})
+    - if discussion.date
+      | (Expected #{discussion.date})
+    - else
+      | (Coming Soon)
