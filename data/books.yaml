@@ -69,4 +69,8 @@ understanding-computation:
       mp3: http://episodes.csbookclub.com/understanding-computation-10.mp3
       seconds: 1080
       bytes: 17289111
-    - name: "Interview with Tom Stuart"
+    - name: "Tom Stuart, and The Ineffable Magic of Computation"
+      date: 2015-09-14
+      mp3: http://episodes.csbookclub.com/understanding-computation-11.mp3
+      seconds: 2947
+      bytes: 47149803
