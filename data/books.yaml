@@ -1,4 +1,21 @@
 ---
+introduction-to-graph-theory:
+  title: Introduction to Graph Theory
+  subtitle: Dover Books on Mathematics
+  author: richardtrudeau
+  buy_links:
+    "Amazon": https://www.amazon.com/dp/0486678709
+    "Kindle": https://www.amazon.com/dp/B00BX1DX9U
+    "Dover Publications": http://store.doverpublications.com/0486678709.html
+  readers:
+    - briancobb
+    - amyunger
+    - clintshryock
+    - justincampbell
+  start_date: 2016-06-27
+  discussions:
+    - name: Introduction
+      date: 2015-07-29
 understanding-computation:
   title: Understanding Computation
   subtitle: From Simple Machines to Impossible Programs
