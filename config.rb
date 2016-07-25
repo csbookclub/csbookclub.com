@@ -93,8 +93,8 @@ helpers do
 
   def title
     [
-      podcast_name,
-      current_page.data.title || yield_content(:title)
+      current_page.data.title || yield_content(:title),
+      podcast_name
     ].compact.join(" - ")
   end
 
