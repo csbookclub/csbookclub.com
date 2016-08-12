@@ -73,13 +73,13 @@ helpers do
   end
 
   def keywords
-    %w[
-      book\ club
-      bookclub
-      compsci
-      computer\ science
-      cs
-      programming
+    [
+      "book club",
+      "bookclub",
+      "compsci",
+      "computer science",
+      "cs",
+      "programming"
     ]
   end
 
