@@ -4,8 +4,8 @@ introduction-to-graph-theory:
   subtitle: Dover Books on Mathematics
   author: richardtrudeau
   buy_links:
-    "Amazon": https://www.amazon.com/dp/0486678709
-    "Kindle": https://www.amazon.com/dp/B00BX1DX9U
+    "Amazon": https://www.amazon.com/dp/0486678709?tag=csbookclubpodcast-20
+    "Kindle": https://www.amazon.com/dp/B00BX1DX9U?tag=csbookclubpodcast-20
     "Dover Publications": http://store.doverpublications.com/0486678709.html
   readers:
     - briancobb
@@ -25,9 +25,9 @@ understanding-computation:
     "Sample": http://computationbook.com/sample
     "Source Code": https://github.com/tomstuart/computationbook
   buy_links:
-    "Amazon (US)": http://www.amazon.com/dp/1449329276
+    "Amazon (US)": http://www.amazon.com/dp/1449329276?tag=csbookclubpodcast-20
     "Amazon (UK)": http://www.amazon.co.uk/dp/1449329276
-    "Kindle": http://www.amazon.com/Understanding-Computation-Machines-Impossible-Programs-ebook/dp/B00CT3C4IM/ref=tmm_kin_title_0?_encoding=UTF8&sr=&qid=
+    "Kindle": http://www.amazon.com/dp/B00CT3C4IM?tag=csbookclubpodcast-20
     "O'Reilly": http://shop.oreilly.com/product/0636920025481.do
   readers:
     - justincampbell
