@@ -14,8 +14,13 @@ introduction-to-graph-theory:
     - justincampbell
   start_date: 2016-06-27
   discussions:
-    - name: Introduction
-      date: 2016-07-29
+    - name: "Preface, Chapter 1: Pure Mathematics"
+      date: 2016-08-12
+      mp3: http://episodes.csbookclub.com/introduction-to-graph-theory-1.mp3
+      seconds: 1597
+      bytes: 25545554
+    - name: "Chapter 2: Graphs"
+      date: 2016-08-19
 understanding-computation:
   title: Understanding Computation
   subtitle: From Simple Machines to Impossible Programs
