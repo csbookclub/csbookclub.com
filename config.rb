@@ -34,12 +34,13 @@ helpers do
   end
 
   def discussions
-    data.books.each_with_object([]) { |(book_id, book), results|
-      book.discussions.each do |discussion|
-        discussion[:book] = book_id
-      end
-      results << book.discussions.select(&:mp3)
-    }.flatten
+    all = data.books.flat_map { |book_id, book|
+      book.discussions.map { |discussion|
+        discussion.merge(book: book_id)
+      }
+    }
+
+    all.select(&:mp3)
   end
 
   def format_time(seconds)

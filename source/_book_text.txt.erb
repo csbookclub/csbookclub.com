@@ -2,10 +2,10 @@
 <%= book.subtitle %>
 by <%= data.people[book.author].name %>
 
-<% book.links.each do |name, url| %>
+<% book.links.to_a.each do |name, url| %>
   <%= name %>: <%= url %>
 <% end %>
-<% book.buy_links.each do |name, url| %>
+<% book.buy_links.to_a.each do |name, url| %>
   <%= name %>: <%= url %>
 <% end %>
 
