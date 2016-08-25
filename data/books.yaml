@@ -20,7 +20,11 @@ introduction-to-graph-theory:
       seconds: 1597
       bytes: 25545554
     - name: "Chapter 2: Graphs"
-      date: 2016-08-19
+      date: 2016-08-26
+    - name: "Chapter 2: Isomorphism"
+      date: 2016-09-02
+    - name: "Chapter 3: Planar Graphs"
+      date: 2016-09-16
 understanding-computation:
   title: Understanding Computation
   subtitle: From Simple Machines to Impossible Programs
