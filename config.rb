@@ -73,6 +73,10 @@ helpers do
     "https://github.com/csbookclub/csbookclub.com"
   end
 
+  def google_play_url
+    "https://goo.gl/app/playmusic?ibi=com.google.PlayMusic&isi=691797987&ius=googleplaymusic&link=https://play.google.com/music/m/Ie7nuxxkcinyfougcdoaqt6gwky?t%3DCS_Book_Club"
+  end
+
   def itunes_url
     "https://itunes.apple.com/us/podcast/cs-book-club/id972444981"
   end
