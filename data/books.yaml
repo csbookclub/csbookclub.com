@@ -21,8 +21,9 @@ introduction-to-graph-theory:
       bytes: 25545554
     - name: "Chapter 2: Graphs"
       date: 2016-08-26
-    - name: "Chapter 2: Isomorphism"
-      date: 2016-09-02
+      mp3: http://episodes.csbookclub.com/introduction-to-graph-theory-2.mp3
+      seconds: 3480
+      bytes: 55674483
     - name: "Chapter 3: Planar Graphs"
       date: 2016-09-16
 understanding-computation:
