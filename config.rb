@@ -57,6 +57,10 @@ helpers do
     "Computer Science for Everyone"
   end
 
+  def podcast_email
+    "podcast@csbookclub.com"
+  end
+
   def podcast_path
     "/podcast.xml"
   end

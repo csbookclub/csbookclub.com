@@ -2,6 +2,7 @@ xml.instruct!
 xml.rss(
   'xmlns:atom' => "http://www.w3.org/2005/Atom",
   'xmlns:itunes' => "http://www.itunes.com/dtds/podcast-1.0.dtd",
+  'xmlns:googleplay' => "http://www.google.com/schemas/play-podcasts/1.0",
   'xmlns:content' => "http://purl.org/rss/1.0/modules/content/",
   'xmlns:media' => "http://search.yahoo.com/mrss/",
   'version' => "2.0"
@@ -19,7 +20,11 @@ xml.rss(
       xml.url cover_art_url(:medium)
     end
 
+    xml.googleplay :author, podcast_name
+    xml.googleplay :email, podcast_email
+
     xml.itunes :author, podcast_name
+    xml.itunes :email, podcast_email
     xml.itunes :explicit, "no"
     xml.itunes :image, href: cover_art_url(:large)
     xml.itunes :summary, podcast_description
