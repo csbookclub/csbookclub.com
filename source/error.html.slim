@@ -1,2 +1,5 @@
 h1 Not Found :(
 p = link_to "Home", "/"
+ul
+  - data.books.each do |slug, book|
+    li = link_to book.title, "/#{slug}"
