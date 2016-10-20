@@ -25,7 +25,7 @@ introduction-to-graph-theory:
       seconds: 3480
       bytes: 55674483
     - name: "Chapter 3: Planar Graphs"
-      date: 2016-09-16
+      date: 2016-10-21
 understanding-computation:
   title: Understanding Computation
   subtitle: From Simple Machines to Impossible Programs
