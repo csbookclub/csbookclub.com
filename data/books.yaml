@@ -25,7 +25,14 @@ introduction-to-graph-theory:
       seconds: 3480
       bytes: 55674483
     - name: "Chapter 3: Planar Graphs"
-      date: 2016-10-21
+      date: 2016-11-21
+      mp3: http://episodes.csbookclub.com/introduction-to-graph-theory-3.mp3
+      seconds: 1873
+      bytes: 29972508
+    - name: "Chapter 4: Euler's Formula"
+      date: 2016-11-28
+    - name: "Chapter 5: Planar Graphs"
+      date: 2016-12-05
 understanding-computation:
   title: Understanding Computation
   subtitle: From Simple Machines to Impossible Programs
