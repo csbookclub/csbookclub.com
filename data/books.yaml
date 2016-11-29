@@ -31,6 +31,9 @@ introduction-to-graph-theory:
       bytes: 29972508
     - name: "Chapter 4: Euler's Formula"
       date: 2016-11-28
+      mp3: http://episodes.csbookclub.com/introduction-to-graph-theory-4.mp3
+      seconds: 1777
+      bytes: 28435674
     - name: "Chapter 5: Planar Graphs"
       date: 2016-12-05
 understanding-computation:
