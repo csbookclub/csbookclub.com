@@ -36,6 +36,11 @@ introduction-to-graph-theory:
       bytes: 28435674
     - name: "Chapter 5: Planar Graphs"
       date: 2016-12-05
+      mp3: http://episodes.csbookclub.com/introduction-to-graph-theory-5.mp3
+      seconds: 365
+      bytes: 5844980
+    - name: "Chapter 6: Coloring"
+      date: 2016-12-19
 understanding-computation:
   title: Understanding Computation
   subtitle: From Simple Machines to Impossible Programs
