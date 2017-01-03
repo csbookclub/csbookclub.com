@@ -40,7 +40,11 @@ introduction-to-graph-theory:
       seconds: 365
       bytes: 5844980
     - name: "Chapter 6: Coloring"
-      date: 2016-12-19
+      date: 2017-01-16
+    - name: "Chapter 7: The Genus of a Graph"
+      date: 2017-01-30
+    - name: "Chapter 8: Euler Walks and Hamilton Walks"
+      date: 2017-02-13
 understanding-computation:
   title: Understanding Computation
   subtitle: From Simple Machines to Impossible Programs
