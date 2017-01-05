@@ -45,7 +45,10 @@ introduction-to-graph-theory:
       seconds: 1009
       bytes: 16143069
     - name: "Chapter 7: The Genus of a Graph"
-      date: 2017-01-30
+      date: 2017-01-13
+      mp3: http://episodes.csbookclub.com/introduction-to-graph-theory-7.mp3
+      seconds: 977
+      bytes: 15627319
     - name: "Chapter 8: Euler Walks and Hamilton Walks"
       date: 2017-02-13
 understanding-computation:
