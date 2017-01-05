@@ -40,7 +40,10 @@ introduction-to-graph-theory:
       seconds: 365
       bytes: 5844980
     - name: "Chapter 6: Coloring"
-      date: 2017-01-16
+      date: 2017-01-05
+      mp3: http://episodes.csbookclub.com/introduction-to-graph-theory-6.mp3
+      seconds: 1009
+      bytes: 16143069
     - name: "Chapter 7: The Genus of a Graph"
       date: 2017-01-30
     - name: "Chapter 8: Euler Walks and Hamilton Walks"
