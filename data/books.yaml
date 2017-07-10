@@ -50,7 +50,10 @@ introduction-to-graph-theory:
       seconds: 977
       bytes: 15627319
     - name: "Chapter 8: Euler Walks and Hamilton Walks"
-      date: 2017-02-13
+      date: 2017-07-10
+      mp3: http://episodes.csbookclub.com/introduction-to-graph-theory-8.mp3
+      seconds: 2603
+      bytes: 41646125
 understanding-computation:
   title: Understanding Computation
   subtitle: From Simple Machines to Impossible Programs
